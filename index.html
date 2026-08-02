@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unity 客户端开发作品集</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="作品集导航">
+      <a class="brand" href="#top">Portfolio</a>
+      <div class="nav-links">
+        <a href="#projects">核心项目</a>
+        <a href="#practice">更多实践</a>
+        <a href="#materials">附件</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">Unity Client Portfolio</p>
+        <h1>Unity 客户端开发实习作品集</h1>
+        <div class="skill-row" aria-label="能力关键词">
+          <span>Unity</span>
+          <span>C#</span>
+          <span>UGUI</span>
+          <span>ScriptableObject</span>
+          <span>对象池</span>
+          <span>NavMesh</span>
+          <span>VR 交互</span>
+          <span>AI 辅助开发</span>
+        </div>
+      </div>
+
+      <div class="hero-panel" aria-label="核心项目概览">
+        <a href="#cards">
+          <strong>01</strong>
+          <span>CardsGame</span>
+          <em>AI 辅助 / 局域网联机 / 架构拆分</em>
+        </a>
+        <a href="#square">
+          <strong>02</strong>
+          <span>Square ShootingV1</span>
+          <em>完整玩法闭环 / 可扩展框架</em>
+        </a>
+        <a href="#superhot">
+          <strong>03</strong>
+          <span>supersuperHot</span>
+          <em>FPS 模块 / 时间机制 / 敌人 AI</em>
+        </a>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Projects</p>
+        <h2>核心项目</h2>
+      </div>
+
+      <article id="square" class="project">
+        <div class="project-cover image-cover square-image-cover">
+          <img src="./assets/square-cover-portrait.jpg" alt="Square ShootingV1 项目封面">
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span>第二项目</span>
+            <span>2D Roguelike 射击</span>
+            <span>独立开发</span>
+          </div>
+          <h3>Square ShootingV1</h3>
+          <p>
+            2D 俯视角 Roguelike 射击项目，重点展示关卡选择、战斗、波次推进、奖励成长、结算和基础存档组成的完整玩法闭环。
+          </p>
+          <ul class="points">
+            <li>使用 ScriptableObject 管理关卡、波次、敌人、奖励、符文和成就等配置。</li>
+            <li>拆分敌人基类、敌人配置和攻击策略，支持多种攻击方式扩展。</li>
+            <li>使用对象池管理敌人和投射物，支撑高频生成与回收。</li>
+            <li>搭建 UGUI 奖励、符文、成就、属性和结算等流程界面。</li>
+          </ul>
+          <div class="snapshot-strip" aria-label="Square ShootingV1 项目截图">
+            <figure class="snapshot">
+              <img src="./assets/project-square-1.jpg" alt="Square ShootingV1 战斗演示画面">
+              <figcaption>战斗循环</figcaption>
+            </figure>
+            <figure class="snapshot">
+              <img src="./assets/project-square-2.jpg" alt="Square ShootingV1 奖励选择画面">
+              <figcaption>奖励成长</figcaption>
+            </figure>
+            <figure class="snapshot">
+              <img src="./assets/project-square-3.jpg" alt="Square ShootingV1 Boss 与结算演示画面">
+              <figcaption>关卡推进</figcaption>
+            </figure>
+          </div>
+          <div class="actions">
+            <a class="button primary" href="https://icng8bwmlzg7.feishu.cn/minutes/obcn6iylv193fzttr619si7s?from=from_copylink" target="_blank" rel="noreferrer">观看视频讲解</a>
+          </div>
+        </div>
+      </article>
+
+      <article id="superhot" class="project">
+        <div class="project-cover image-cover">
+          <img src="./assets/superhot-cover.png" alt="supersuperHot 项目封面">
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span>第三项目</span>
+            <span>FPS Demo</span>
+            <span>模块能力</span>
+          </div>
+          <h3>supersuperHot</h3>
+          <p>
+            Superhot 风格第一人称动作射击 Demo，重点验证玩家行动影响时间流速的玩法机制，以及 FPS 控制、武器交互和基础敌人 AI。
+          </p>
+          <ul class="points">
+            <li>通过 Time.timeScale 实现静止降速、移动或攻击恢复时间流速。</li>
+            <li>实现武器拾取、射击、换弹、投掷、近战和受击反馈。</li>
+            <li>使用 NavMesh、视野检测、射线遮挡和状态切换组织敌人行为。</li>
+          </ul>
+          <div class="snapshot-strip" aria-label="supersuperHot 项目截图">
+            <figure class="snapshot">
+              <img src="./assets/project-superhot-1.jpg" alt="supersuperHot 场景封面">
+              <figcaption>时间机制场景</figcaption>
+            </figure>
+            <figure class="snapshot">
+              <img src="./assets/project-superhot-2.jpg" alt="supersuperHot 武器交互演示">
+              <figcaption>武器交互</figcaption>
+            </figure>
+            <figure class="snapshot">
+              <img src="./assets/project-superhot-3.jpg" alt="supersuperHot 敌人行为演示">
+              <figcaption>敌人行为</figcaption>
+            </figure>
+          </div>
+          <div class="actions">
+            <a class="button primary" href="https://icng8bwmlzg7.feishu.cn/minutes/obcn6i69jcngks6j95w418lu?from=from_copylink" target="_blank" rel="noreferrer">观看视频讲解</a>
+          </div>
+        </div>
+      </article>
+
+      <article id="cards" class="project project-primary">
+        <div class="project-cover image-cover">
+          <img src="./assets/cards-cover.jpg" alt="CardsGame 局域网卡牌项目演示画面">
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span>主项目</span>
+            <span>局域网卡牌</span>
+            <span>AI 辅助开发</span>
+          </div>
+          <h3>CardsGame</h3>
+          <p>
+            AI 辅助完成的局域网三人卡牌实践。重点展示从网络知识补足、架构讨论、模块边界约束，到 AI 分阶段实现、自动回归和 Unity 人工验证的完整过程。
+          </p>
+          <ul class="points">
+            <li>拆分 Client、GameCore、Shared、MockServer、Prototype、LocalGameServer 等模块。</li>
+            <li>实现局域网房间创建、加入、Ready 开局、回合出牌与卡槽结算。</li>
+            <li>支持断线暂停、重连恢复，并通过三客户端测试和回归脚本验证关键流程。</li>
+          </ul>
+          <div class="snapshot-strip" aria-label="CardsGame 项目截图">
+            <figure class="snapshot">
+              <img src="./assets/project-cards-1.jpg" alt="CardsGame 房间和玩家档案界面">
+              <figcaption>房间与档案</figcaption>
+            </figure>
+            <figure class="snapshot">
+              <img src="./assets/project-cards-2.jpg" alt="CardsGame 三客户端对局演示">
+              <figcaption>三端对局</figcaption>
+            </figure>
+            <figure class="snapshot">
+              <img src="./assets/project-cards-3.jpg" alt="CardsGame 模块拆分示意图">
+              <figcaption>模块拆分</figcaption>
+            </figure>
+          </div>
+          <div class="actions">
+            <a class="button primary" href="https://icng8bwmlzg7.feishu.cn/minutes/obcn6ie89pu5o73f2i9z54gz?from=from_copylink" target="_blank" rel="noreferrer">观看视频讲解</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="practice" class="section practice-band">
+      <div class="section-heading">
+        <p class="eyebrow">More Practice</p>
+        <h2>其他实践</h2>
+      </div>
+
+      <div class="practice-grid">
+        <article>
+          <a class="practice-cover" href="https://icng8bwmlzg7.feishu.cn/minutes/obcn6nv9319376s3t4iv4d3e?from=from_copylink" target="_blank" rel="noreferrer">
+            <img src="./assets/practice-vr-yaozhai.jpg" alt="VR 瑶寨交互项目封面">
+          </a>
+          <div class="practice-content">
+            <span>VR / 竞赛项目</span>
+            <h3>VR 瑶寨交互项目</h3>
+            <p>负责射箭、书写、切割、绘制等交互模块，并参与项目整合与流程展示。</p>
+            <a href="https://icng8bwmlzg7.feishu.cn/minutes/obcn6nv9319376s3t4iv4d3e?from=from_copylink" target="_blank" rel="noreferrer">查看视频</a>
+          </div>
+        </article>
+        <article>
+          <a class="practice-cover" href="https://icng8bwmlzg7.feishu.cn/minutes/obcn6nznin3e8t96k13145ir?from=from_copylink" target="_blank" rel="noreferrer">
+            <img src="./assets/practice-vr-micro.jpg" alt="VR 化学虚拟实验封面">
+          </a>
+          <div class="practice-content">
+            <span>VR / Shader</span>
+            <h3>VR 化学虚拟实验</h3>
+            <p>实现实验交互、水和气体粒子表现，以及材质颜色变化反馈。</p>
+            <a href="https://icng8bwmlzg7.feishu.cn/minutes/obcn6nznin3e8t96k13145ir?from=from_copylink" target="_blank" rel="noreferrer">查看视频</a>
+          </div>
+        </article>
+        <article>
+          <a class="practice-cover" href="https://icng8bwmlzg7.feishu.cn/minutes/obcn6n2rxa14jx8d43657459?from=from_copylink" target="_blank" rel="noreferrer">
+            <img src="./assets/practice-ue-vfx.jpg" alt="UE Niagara 特效练习封面">
+          </a>
+          <div class="practice-content">
+            <span>UE / Niagara</span>
+            <h3>UE Niagara 特效练习</h3>
+            <p>围绕粒子爆发、拖尾和攻击表现进行 Niagara 节点与视觉效果练习。</p>
+            <a href="https://icng8bwmlzg7.feishu.cn/minutes/obcn6n2rxa14jx8d43657459?from=from_copylink" target="_blank" rel="noreferrer">查看视频</a>
+          </div>
+        </article>
+        <article>
+          <a class="practice-cover" href="https://icng8bwmlzg7.feishu.cn/minutes/obcn6nt6iqb9u2rvn5ovapvf?from=from_copylink" target="_blank" rel="noreferrer">
+            <img src="./assets/practice-ue-scene.jpg" alt="UE 场景搭建练习封面">
+          </a>
+          <div class="practice-content">
+            <span>UE / 场景</span>
+            <h3>UE 场景搭建练习</h3>
+            <p>补充展示场景搭建、灯光氛围、镜头展示和环境叙事练习。</p>
+            <a href="https://icng8bwmlzg7.feishu.cn/minutes/obcn6nt6iqb9u2rvn5ovapvf?from=from_copylink" target="_blank" rel="noreferrer">查看视频</a>
+          </div>
+        </article>
+        <article>
+          <a class="practice-cover" href="https://icng8bwmlzg7.feishu.cn/minutes/obcn6n4gh85458ri94w37886?from=from_copylink" target="_blank" rel="noreferrer">
+            <img src="./assets/practice-ai-video.jpg" alt="AI 视频制作练习封面">
+          </a>
+          <div class="practice-content">
+            <span>AI Video</span>
+            <h3>AI 视频制作练习</h3>
+            <p>使用 AI 辅助脚本、画面生成、配音和剪辑，作为综合创作流程补充。</p>
+            <a href="https://icng8bwmlzg7.feishu.cn/minutes/obcn6n4gh85458ri94w37886?from=from_copylink" target="_blank" rel="noreferrer">查看代表视频</a>
+          </div>
+        </article>
+        <article>
+          <a class="practice-cover" href="https://icng8bwmlzg7.feishu.cn/minutes/obcn6ng8359zvg1be7de3k9n?from=from_copylink" target="_blank" rel="noreferrer" aria-label="学习 Demo 合集演示视频">
+            <img src="./assets/practice-demo-cover.jpg" alt="学习 Demo 合集封面">
+          </a>
+          <div class="practice-content">
+            <span>Demo / 学习案例</span>
+            <h3>学习 Demo 合集</h3>
+            <p>用于补充展示 UI、动画、粒子、AR、基础玩法等小练习，后续放一段快速演示视频即可。</p>
+            <a href="https://icng8bwmlzg7.feishu.cn/minutes/obcn6ng8359zvg1be7de3k9n?from=from_copylink" target="_blank" rel="noreferrer">查看视频</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="materials" class="section materials">
+      <div class="section-heading">
+        <p class="eyebrow">Materials</p>
+        <h2>附件与链接</h2>
+      </div>
+
+      <div class="materials-grid">
+        <a href="./assets/resume.pdf" target="_blank" rel="noreferrer">
+          <strong>简历 PDF</strong>
+          <span>Unity 客户端开发简历</span>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
